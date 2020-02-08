@@ -3,7 +3,7 @@ package utility;
 public class Constant {
 
     public static class testData{
-        public static final String baseUrl = "https://bluemedia.pl/kontakt";
+        public static final String baseUrl = "https://bluemedia.pl";
     }
 
     public static class UserData {

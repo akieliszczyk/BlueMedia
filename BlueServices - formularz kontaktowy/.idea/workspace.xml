@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb5074d-6f70-4432-98e4-42d961455362" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utility/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utility/Constant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Formularz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Formularz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Formularz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Formularz.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.Formularz.completeTheForm">
+  <component name="RunManager" selected="JUnit.Formularz">
     <configuration name="Formularz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BlueServices - formularz kontaktowy" />
       <option name="PACKAGE_NAME" value="" />
@@ -50,11 +51,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Formularz.completeTheForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Formularz.AopenNEXTPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BlueServices - formularz kontaktowy" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Formularz" />
-      <option name="METHOD_NAME" value="completeTheForm" />
+      <option name="METHOD_NAME" value="AopenNEXTPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Formularz.BcompleteTheForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlueServices - formularz kontaktowy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Formularz" />
+      <option name="METHOD_NAME" value="BcompleteTheForm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -70,21 +81,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Formularz.openNEXTPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BlueServices - formularz kontaktowy" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Formularz" />
-      <option name="METHOD_NAME" value="openNEXTPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Formularz.completeTheForm" />
         <item itemvalue="JUnit.Formularz" />
-        <item itemvalue="JUnit.Formularz.openNEXTPage" />
+        <item itemvalue="JUnit.Formularz.BcompleteTheForm" />
+        <item itemvalue="JUnit.Formularz.AopenNEXTPage" />
         <item itemvalue="JUnit.Formularz.openKontaktPage" />
       </list>
     </recent_temporary>
