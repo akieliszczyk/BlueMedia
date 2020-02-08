@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utility.Constant;
 
-public class KontaktPage extends BasePage<WebDriver> {
+public class KontaktPage extends BasePage {
     public KontaktPage(WebDriver driver) {
         super(driver);
     }
@@ -76,6 +76,7 @@ public class KontaktPage extends BasePage<WebDriver> {
 
     public void chooseTopic() {
         dropdownChooseTopic.click();
+
         dropdownPrzelewNatychmiastowy.click();
     }
 
