@@ -4,18 +4,26 @@ import windowobjects.HomePage;
 import windowobjects.KontaktPage;
 
 public class Formularz extends TestConfig {
+    HomePage homePage;
+    KontaktPage kontaktPage;
+
 
     @Test
     public void openNEXTPage() {
-        new HomePage(driver)
-                .openKontaktPage();
+        homePage = new HomePage(driver);
+        homePage.openKontaktPage();
 
     }
 
     @Test
     public void completeTheForm() throws InterruptedException {
-        new KontaktPage(driver)
-                .enterData();
+        kontaktPage = new KontaktPage(driver);
+        kontaktPage.selectKlientBiznesowyCheckbox();
+        kontaktPage.enterData();
+        kontaktPage.chooseTopic();
+        kontaktPage.selectEmailAgreement();
+        kontaktPage.selectAgreement();
+
 
 
     }
