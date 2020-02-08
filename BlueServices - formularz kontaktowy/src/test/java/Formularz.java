@@ -1,7 +1,7 @@
 import config.TestConfig;
 import org.junit.Test;
-import windowobjects.HomePage;
-import windowobjects.KontaktPage;
+import pages.HomePage;
+import pages.KontaktPage;
 
 public class Formularz extends TestConfig {
     HomePage homePage;
