@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -57,7 +58,7 @@ public class KontaktPage extends BasePage {
         checkboxKlientBiznesowy.click();
     }
 
-    public void enterData() throws InterruptedException {
+    public void enterData() {
 
         checkboxKlientBiznesowy.click();
         textboxName.click();
@@ -68,22 +69,11 @@ public class KontaktPage extends BasePage {
         textboxPhone.sendKeys(Constant.UserData.telefon);
         textboxAdditionalInformation.click();
         textboxAdditionalInformation.sendKeys(Constant.UserData.tresc);
-        dropdownChooseTopic.click();
-        Thread.sleep(1000);
-        textboxSearch.sendKeys("P");
-        Thread.sleep(1000);
-
-
-        dropdownPrzelewNatychmiastowy.click();
-        checkboxEmailAgreement.click();
-        checkboxAgreement.click();
-
     }
 
-    public void chooseTopic() {
+    public void chooseTopic() throws InterruptedException {
         dropdownChooseTopic.click();
-
-        dropdownPrzelewNatychmiastowy.click();
+        textboxSearch.sendKeys("Przelewy natychmiastowe", Keys.ENTER);
     }
 
     public void selectEmailAgreement() {
