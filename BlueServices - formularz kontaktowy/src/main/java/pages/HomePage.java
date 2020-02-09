@@ -12,17 +12,10 @@ public class HomePage extends BasePage {
     @FindBy(id = "main_nav_trigger")
     private WebElement mainWindow;
 
-    @FindBy(xpath = "//div[contains(@class,'header__navigation')]//a[contains(text(),'Kontakt')]")
-    private WebElement buttonKontakt;
-
     public boolean isOpened() {
         return mainWindow.isDisplayed();
     }
 
-    public KontaktPage openKontaktPage() {
-        buttonKontakt.click();
-        return new KontaktPage(driver);
-    }
 
 
 
