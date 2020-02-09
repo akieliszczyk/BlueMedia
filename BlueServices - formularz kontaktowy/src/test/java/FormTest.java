@@ -18,11 +18,9 @@ public class FormTest extends TestConfig {
         businessClient = DataProvider.getBusinessClient();
         homePage = new HomePage(driver);
         homePage.isOpened()
-                .getNavigationBar();
-        navigationBar = new NavigationBar(driver);
-        navigationBar.openKontaktPage();
-        contaktPage = new ContaktPage(driver);
-        contaktPage.isOpened()
+                .getNavigationBar()
+                .openKontaktPage()
+                .isOpened()
                 .selectKlientBiznesowyCheckbox()
                 .enterData(businessClient)
                 .chooseTopic(businessClient)
