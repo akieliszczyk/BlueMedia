@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TestConfig {
 
-    protected static WebDriver driver;
+    protected WebDriver driver;
 
     @Before
     public void openPage() {
