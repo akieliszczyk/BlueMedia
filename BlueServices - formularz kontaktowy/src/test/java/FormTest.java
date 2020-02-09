@@ -17,13 +17,13 @@ public class FormTest extends TestConfig {
     public void completeTheFormTest() {
         businessClient = DataProvider.getBusinessClient();
         homePage = new HomePage(driver);
-        Assert.assertTrue(homePage.isOpened());
-        homePage.getNavigationBar();
+        homePage.isOpened()
+                .getNavigationBar();
         navigationBar = new NavigationBar(driver);
         navigationBar.openKontaktPage();
         contaktPage = new ContaktPage(driver);
-        Assert.assertTrue(contaktPage.isOpened());
-        contaktPage.selectKlientBiznesowyCheckbox()
+        contaktPage.isOpened()
+                .selectKlientBiznesowyCheckbox()
                 .enterData(businessClient)
                 .chooseTopic(businessClient)
                 .selectEmailAgreement()

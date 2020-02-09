@@ -1,6 +1,7 @@
 package pages;
 
 import components.NavigationBar;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,11 +18,13 @@ public class HomePage extends BasePage {
     }
 
     public NavigationBar getNavigationBar() {
+
         return new NavigationBar(driver);
     }
 
-    public boolean isOpened() {
-        return mainWindow.isDisplayed();
+    public HomePage isOpened() {
+        Assert.assertTrue(mainWindow.isDisplayed());
+        return this;
     }
 
 

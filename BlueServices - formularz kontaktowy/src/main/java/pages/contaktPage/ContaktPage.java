@@ -1,6 +1,7 @@
 package pages.contaktPage;
 
 import model.BusinessClient;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -54,8 +55,9 @@ public class ContaktPage extends BasePage {
         super(driver);
         dropdown = new Dropdown(driver);
     }
-    public boolean isOpened() {
-        return mainwindow.isDisplayed();
+    public ContaktPage isOpened() {
+        Assert.assertTrue(textboxName.isDisplayed());
+        return this;
     }
 
     public ContaktPage selectKlientBiznesowyCheckbox() {
