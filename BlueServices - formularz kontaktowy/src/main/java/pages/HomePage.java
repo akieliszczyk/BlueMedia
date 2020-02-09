@@ -15,6 +15,10 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[contains(@class,'header__navigation')]//a[contains(text(),'Kontakt')]")
     private WebElement buttonKontakt;
 
+    public boolean isOpened() {
+        return mainWindow.isDisplayed();
+    }
+
     public KontaktPage openKontaktPage() {
         buttonKontakt.click();
         return new KontaktPage(driver);
