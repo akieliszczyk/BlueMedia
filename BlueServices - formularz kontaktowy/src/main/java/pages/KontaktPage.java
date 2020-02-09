@@ -46,6 +46,9 @@ public class KontaktPage extends BasePage {
     @FindBy(className = "select2-selection__rendered")
     private WebElement dropdownPrzelewNatychmiastowy;
 
+    public boolean isOpened() {
+        return checkboxKlientBiznesowy.isDisplayed();
+    }
 
     public void selectKlientBiznesowyCheckbox() {
         checkboxKlientBiznesowy.click();
