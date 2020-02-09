@@ -2,7 +2,7 @@ package provider;
 
 import model.BusinessClient;
 
-public class DataProvider {
+public class DataFactory {
 
     public static BusinessClient getBusinessClient() {
         BusinessClient businessClient = new BusinessClient();

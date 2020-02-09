@@ -1,21 +1,18 @@
-import components.NavigationBar;
-import config.TestConfig;
+package scenarios;
+
+import config.BaseTest;
 import model.BusinessClient;
-import org.junit.Assert;
 import org.junit.Test;
 import pages.HomePage;
-import pages.contaktPage.ContaktPage;
-import provider.DataProvider;
+import provider.DataFactory;
 
-public class FormTest extends TestConfig {
+public class FormTest extends BaseTest {
     HomePage homePage;
-    ContaktPage contaktPage;
-    NavigationBar navigationBar;
     BusinessClient businessClient;
 
     @Test
     public void completeTheFormTest() {
-        businessClient = DataProvider.getBusinessClient();
+        businessClient = DataFactory.getBusinessClient();
         homePage = new HomePage(driver);
         homePage.isOpened()
                 .getNavigationBar()
@@ -23,12 +20,7 @@ public class FormTest extends TestConfig {
                 .isOpened()
                 .selectKlientBiznesowyCheckbox()
                 .enterData(businessClient)
-                .chooseTopic(businessClient)
                 .selectEmailAgreement()
                 .selectAgreement();
-
-
     }
-
-
 }

@@ -9,7 +9,7 @@ import utility.Constant;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestConfig {
+public class BaseTest {
 
     protected WebDriver driver;
 

@@ -1,4 +1,4 @@
-package pages.contaktPage;
+package pages.contakt_page;
 
 import model.BusinessClient;
 import org.junit.Assert;
@@ -32,7 +32,7 @@ public class ContaktPage extends BasePage {
     private WebElement listTopic;
 
     @FindBy(xpath = "//input[contains(@data-request-data,\"id:1,post_id:370\")]")
-    private WebElement checkboxKlientBiznesowy;
+    private WebElement checkboxBusinessClient;
 
     @FindBy(id = "agreement_1")
     private WebElement checkboxAgreement;
@@ -61,14 +61,14 @@ public class ContaktPage extends BasePage {
     }
 
     public ContaktPage selectKlientBiznesowyCheckbox() {
-        checkboxKlientBiznesowy.click();
+        checkboxBusinessClient.click();
         return this;
 
     }
 
     public ContaktPage enterData(BusinessClient businessClient) {
 
-        checkboxKlientBiznesowy.click();
+        checkboxBusinessClient.click();
         textboxName.click();
         textboxName.sendKeys(businessClient.getFullName());
         textboxEmail.click();
@@ -76,12 +76,8 @@ public class ContaktPage extends BasePage {
         textboxPhone.click();
         textboxPhone.sendKeys(businessClient.getPhone());
         textboxAdditionalInformation.click();
-        textboxAdditionalInformation.sendKeys(businessClient.getDescription());
-        return this;
-    }
-
-    public ContaktPage chooseTopic(BusinessClient businessClient) {
         dropdown.selectOption(businessClient.getSubject());
+        textboxAdditionalInformation.sendKeys(businessClient.getDescription());
         return this;
     }
 
