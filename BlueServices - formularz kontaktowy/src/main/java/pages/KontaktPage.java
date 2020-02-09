@@ -71,7 +71,7 @@ public class KontaktPage extends BasePage {
         textboxAdditionalInformation.sendKeys(Constant.UserData.tresc);
     }
 
-    public void chooseTopic() throws InterruptedException {
+    public void chooseTopic() {
         dropdownChooseTopic.click();
         textboxSearch.sendKeys("Przelewy natychmiastowe", Keys.ENTER);
     }
