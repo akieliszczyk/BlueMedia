@@ -1,15 +1,14 @@
-package pages;
+package pages.kontaktPage;
 
 import model.BusinessClient;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import pages.BasePage;
 
 public class KontaktPage extends BasePage {
-    public KontaktPage(WebDriver driver) {
-        super(driver);
-    }
+
 
 //    @FindBy(xpath = "//div[contains(@class,\"age-container\")]//h1[contains(text(),\"Dobrze być w kontakcie.\")]")
 //    private WebElement mainwindow;
@@ -50,6 +49,12 @@ public class KontaktPage extends BasePage {
     @FindBy(className = "select2-selection__rendered")
     private WebElement dropdownPrzelewNatychmiastowy;
 
+    private Dropdown dropdown;
+
+    public KontaktPage(WebDriver driver) {
+        super(driver);
+        dropdown = new Dropdown(driver);
+    }
 //    public boolean isOpened() {
 //        return mainwindow.isDisplayed();
 //    }
@@ -74,9 +79,8 @@ public class KontaktPage extends BasePage {
         return this;
     }
 
-    public KontaktPage chooseTopic() {
-        dropdownChooseTopic.click();
-        textboxSearch.sendKeys("Przelewy natychmiastowe", Keys.ENTER);
+    public KontaktPage chooseTopic(BusinessClient businessClient) {
+        dropdown.selectOption(businessClient.getSubject());
         return this;
     }
 

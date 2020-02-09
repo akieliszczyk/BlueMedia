@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
-import pages.KontaktPage;
+import pages.kontaktPage.KontaktPage;
 
 public class NavigationBar extends BasePage {
 

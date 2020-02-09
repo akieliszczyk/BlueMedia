@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb5074d-6f70-4432-98e4-42d961455362" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/BusinessClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/provider/DataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/kontaktPage/Dropdown.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/KontaktPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/KontaktPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/NavigationBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/NavigationBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/KontaktPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/kontaktPage/KontaktPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Formularz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Formularz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/KontaktPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/KontaktPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/components/NavigationBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/components/NavigationBar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/KontaktPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Formularz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Formularz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/config/TestConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/config/TestConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,25 +114,25 @@
     </state>
     <state x="-1219" y="391" key="FileChooserDialogImpl/0.0.1600.856/-1920.129.1920.1200@-1920.129.1920.1200" timestamp="1581178525852" />
     <state x="584" y="187" key="FileChooserDialogImpl/0.0.1600.856/-1920.129.1920.1200@0.0.1600.856" timestamp="1581034533114" />
-    <state width="1878" height="272" key="GridCell.Tab.0.bottom" timestamp="1581271314484">
+    <state width="1878" height="427" key="GridCell.Tab.0.bottom" timestamp="1581274789445">
       <screen x="-1920" y="129" width="1920" height="1200" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.bottom/0.0.1600.856/-1920.129.1920.1200@-1920.129.1920.1200" timestamp="1581271314484" />
+    <state width="1878" height="427" key="GridCell.Tab.0.bottom/0.0.1600.856/-1920.129.1920.1200@-1920.129.1920.1200" timestamp="1581274789445" />
     <state width="1558" height="358" key="GridCell.Tab.0.bottom/0.0.1600.856/-1920.129.1920.1200@0.0.1600.856" timestamp="1581197720264" />
-    <state width="1878" height="272" key="GridCell.Tab.0.center" timestamp="1581271314484">
+    <state width="1878" height="427" key="GridCell.Tab.0.center" timestamp="1581274789445">
       <screen x="-1920" y="129" width="1920" height="1200" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.center/0.0.1600.856/-1920.129.1920.1200@-1920.129.1920.1200" timestamp="1581271314484" />
+    <state width="1878" height="427" key="GridCell.Tab.0.center/0.0.1600.856/-1920.129.1920.1200@-1920.129.1920.1200" timestamp="1581274789445" />
     <state width="1558" height="358" key="GridCell.Tab.0.center/0.0.1600.856/-1920.129.1920.1200@0.0.1600.856" timestamp="1581197720264" />
-    <state width="1878" height="272" key="GridCell.Tab.0.left" timestamp="1581271314484">
+    <state width="1878" height="427" key="GridCell.Tab.0.left" timestamp="1581274789445">
       <screen x="-1920" y="129" width="1920" height="1200" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.left/0.0.1600.856/-1920.129.1920.1200@-1920.129.1920.1200" timestamp="1581271314484" />
+    <state width="1878" height="427" key="GridCell.Tab.0.left/0.0.1600.856/-1920.129.1920.1200@-1920.129.1920.1200" timestamp="1581274789445" />
     <state width="1558" height="358" key="GridCell.Tab.0.left/0.0.1600.856/-1920.129.1920.1200@0.0.1600.856" timestamp="1581197720264" />
-    <state width="1878" height="272" key="GridCell.Tab.0.right" timestamp="1581271314484">
+    <state width="1878" height="427" key="GridCell.Tab.0.right" timestamp="1581274789445">
       <screen x="-1920" y="129" width="1920" height="1200" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.right/0.0.1600.856/-1920.129.1920.1200@-1920.129.1920.1200" timestamp="1581271314484" />
+    <state width="1878" height="427" key="GridCell.Tab.0.right/0.0.1600.856/-1920.129.1920.1200@-1920.129.1920.1200" timestamp="1581274789445" />
     <state width="1558" height="358" key="GridCell.Tab.0.right/0.0.1600.856/-1920.129.1920.1200@0.0.1600.856" timestamp="1581197720264" />
     <state x="246" y="0" width="934" height="624" key="dock-window-1" timestamp="1581245197496">
       <screen x="0" y="0" width="1600" height="856" />

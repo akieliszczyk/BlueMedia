@@ -3,7 +3,7 @@ import config.TestConfig;
 import model.BusinessClient;
 import org.junit.Test;
 import pages.HomePage;
-import pages.KontaktPage;
+import pages.kontaktPage.KontaktPage;
 import provider.DataProvider;
 
 public class Formularz extends TestConfig {
@@ -22,6 +22,7 @@ public class Formularz extends TestConfig {
         kontaktPage = new KontaktPage(driver)
                 .selectKlientBiznesowyCheckbox()
                 .enterData(businessClient)
+                .chooseTopic(businessClient)
                 .selectEmailAgreement()
                 .selectAgreement();
 
