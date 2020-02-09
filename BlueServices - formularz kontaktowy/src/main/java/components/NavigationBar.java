@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
-import pages.kontaktPage.KontaktPage;
+import pages.contaktPage.ContaktPage;
 
 public class NavigationBar extends BasePage {
 
@@ -16,8 +16,8 @@ public class NavigationBar extends BasePage {
         super(driver);
     }
 
-    public KontaktPage openKontaktPage() {
+    public ContaktPage openKontaktPage() {
         buttonKontakt.click();
-        return new KontaktPage(driver);
+        return new ContaktPage(driver);
     }
 }

@@ -1,13 +1,12 @@
-package pages.kontaktPage;
+package pages.contaktPage;
 
 import model.BusinessClient;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
 
-public class KontaktPage extends BasePage {
+public class ContaktPage extends BasePage {
 
 
 //    @FindBy(xpath = "//div[contains(@class,\"age-container\")]//h1[contains(text(),\"Dobrze być w kontakcie.\")]")
@@ -51,7 +50,7 @@ public class KontaktPage extends BasePage {
 
     private Dropdown dropdown;
 
-    public KontaktPage(WebDriver driver) {
+    public ContaktPage(WebDriver driver) {
         super(driver);
         dropdown = new Dropdown(driver);
     }
@@ -59,13 +58,13 @@ public class KontaktPage extends BasePage {
 //        return mainwindow.isDisplayed();
 //    }
 
-    public KontaktPage selectKlientBiznesowyCheckbox() {
+    public ContaktPage selectKlientBiznesowyCheckbox() {
         checkboxKlientBiznesowy.click();
         return this;
 
     }
 
-    public KontaktPage enterData(BusinessClient businessClient) {
+    public ContaktPage enterData(BusinessClient businessClient) {
 
         checkboxKlientBiznesowy.click();
         textboxName.click();
@@ -79,17 +78,17 @@ public class KontaktPage extends BasePage {
         return this;
     }
 
-    public KontaktPage chooseTopic(BusinessClient businessClient) {
+    public ContaktPage chooseTopic(BusinessClient businessClient) {
         dropdown.selectOption(businessClient.getSubject());
         return this;
     }
 
-    public KontaktPage selectEmailAgreement() {
+    public ContaktPage selectEmailAgreement() {
         checkboxEmailAgreement.click();
         return this;
     }
 
-    public KontaktPage selectAgreement() {
+    public ContaktPage selectAgreement() {
         checkboxAgreement.click();
         return this;
     }

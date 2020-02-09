@@ -3,23 +3,23 @@ import config.TestConfig;
 import model.BusinessClient;
 import org.junit.Test;
 import pages.HomePage;
-import pages.kontaktPage.KontaktPage;
+import pages.contaktPage.ContaktPage;
 import provider.DataProvider;
 
-public class Formularz extends TestConfig {
+public class FormTest extends TestConfig {
     HomePage homePage;
-    KontaktPage kontaktPage;
+    ContaktPage kontaktPage;
     NavigationBar navigationBar;
     BusinessClient businessClient;
 
     @Test
-    public void completeTheForm() {
+    public void completeTheFormTest() {
         businessClient = DataProvider.getBusinessClient();
         homePage = new HomePage(driver);
         homePage.getNavigationBar();
         navigationBar = new NavigationBar(driver);
         navigationBar.openKontaktPage();
-        kontaktPage = new KontaktPage(driver)
+        kontaktPage = new ContaktPage(driver)
                 .selectKlientBiznesowyCheckbox()
                 .enterData(businessClient)
                 .chooseTopic(businessClient)
