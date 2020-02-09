@@ -10,6 +10,9 @@ public class KontaktPage extends BasePage {
         super(driver);
     }
 
+    @FindBy(xpath = "//div[contains(@class,\"age-container\")]//h1[contains(text(),\"Dobrze być w kontakcie.\")]")
+    private WebElement mainwindow;
+
     @FindBy(id = "name")
     private WebElement textboxName;
 
@@ -47,7 +50,7 @@ public class KontaktPage extends BasePage {
     private WebElement dropdownPrzelewNatychmiastowy;
 
     public boolean isOpened() {
-        return checkboxKlientBiznesowy.isDisplayed();
+        return mainwindow.isDisplayed();
     }
 
     public void selectKlientBiznesowyCheckbox() {
