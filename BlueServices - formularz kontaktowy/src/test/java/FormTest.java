@@ -1,6 +1,7 @@
 import components.NavigationBar;
 import config.TestConfig;
 import model.BusinessClient;
+import org.junit.Assert;
 import org.junit.Test;
 import pages.HomePage;
 import pages.contaktPage.ContaktPage;
@@ -8,7 +9,7 @@ import provider.DataProvider;
 
 public class FormTest extends TestConfig {
     HomePage homePage;
-    ContaktPage kontaktPage;
+    ContaktPage contaktPage;
     NavigationBar navigationBar;
     BusinessClient businessClient;
 
@@ -16,11 +17,13 @@ public class FormTest extends TestConfig {
     public void completeTheFormTest() {
         businessClient = DataProvider.getBusinessClient();
         homePage = new HomePage(driver);
+        Assert.assertTrue(homePage.isOpened());
         homePage.getNavigationBar();
         navigationBar = new NavigationBar(driver);
         navigationBar.openKontaktPage();
-        kontaktPage = new ContaktPage(driver)
-                .selectKlientBiznesowyCheckbox()
+        contaktPage = new ContaktPage(driver);
+        Assert.assertTrue(contaktPage.isOpened());
+        contaktPage.selectKlientBiznesowyCheckbox()
                 .enterData(businessClient)
                 .chooseTopic(businessClient)
                 .selectEmailAgreement()

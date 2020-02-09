@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
     }
 
     public NavigationBar getNavigationBar() {
-        return navigationBar;
+        return new NavigationBar(driver);
     }
 
     public boolean isOpened() {

@@ -9,8 +9,8 @@ import pages.BasePage;
 public class ContaktPage extends BasePage {
 
 
-//    @FindBy(xpath = "//div[contains(@class,\"age-container\")]//h1[contains(text(),\"Dobrze być w kontakcie.\")]")
-//    private WebElement mainwindow;
+    @FindBy(className = "hp__main__subtitle")
+    private WebElement mainwindow;
 
     @FindBy(id = "name")
     private WebElement textboxName;
@@ -54,9 +54,9 @@ public class ContaktPage extends BasePage {
         super(driver);
         dropdown = new Dropdown(driver);
     }
-//    public boolean isOpened() {
-//        return mainwindow.isDisplayed();
-//    }
+    public boolean isOpened() {
+        return mainwindow.isDisplayed();
+    }
 
     public ContaktPage selectKlientBiznesowyCheckbox() {
         checkboxKlientBiznesowy.click();
