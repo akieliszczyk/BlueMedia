@@ -1,26 +1,29 @@
+import components.NavigationBar;
 import config.TestConfig;
-import org.junit.Assert;
+import model.BusinessClient;
 import org.junit.Test;
 import pages.HomePage;
 import pages.KontaktPage;
+import provider.DataProvider;
 
 public class Formularz extends TestConfig {
     HomePage homePage;
     KontaktPage kontaktPage;
+    NavigationBar navigationBar;
+    BusinessClient businessClient;
 
     @Test
-    public void completeTheForm() throws InterruptedException {
+    public void completeTheForm() {
+        businessClient = DataProvider.getBusinessClient();
         homePage = new HomePage(driver);
-        Assert.assertTrue(homePage.isOpened());
-        homePage.openKontaktPage();
-        kontaktPage = new KontaktPage(driver);
-        Assert.assertTrue(kontaktPage.isOpened());
-        kontaktPage.selectKlientBiznesowyCheckbox();
-        kontaktPage.enterData();
-        kontaktPage.chooseTopic();
-        kontaktPage.selectEmailAgreement();
-        kontaktPage.selectAgreement();
-
+        homePage.getNavigationBar();
+        navigationBar = new NavigationBar(driver);
+        navigationBar.openKontaktPage();
+        kontaktPage = new KontaktPage(driver)
+                .selectKlientBiznesowyCheckbox()
+                .enterData(businessClient)
+                .selectEmailAgreement()
+                .selectAgreement();
 
 
     }

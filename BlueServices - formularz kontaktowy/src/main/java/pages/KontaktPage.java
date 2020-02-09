@@ -1,18 +1,18 @@
 package pages;
 
+import model.BusinessClient;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import utility.Constant;
 
 public class KontaktPage extends BasePage {
     public KontaktPage(WebDriver driver) {
         super(driver);
     }
 
-    @FindBy(xpath = "//div[contains(@class,\"age-container\")]//h1[contains(text(),\"Dobrze być w kontakcie.\")]")
-    private WebElement mainwindow;
+//    @FindBy(xpath = "//div[contains(@class,\"age-container\")]//h1[contains(text(),\"Dobrze być w kontakcie.\")]")
+//    private WebElement mainwindow;
 
     @FindBy(id = "name")
     private WebElement textboxName;
@@ -50,38 +50,44 @@ public class KontaktPage extends BasePage {
     @FindBy(className = "select2-selection__rendered")
     private WebElement dropdownPrzelewNatychmiastowy;
 
-    public boolean isOpened() {
-        return mainwindow.isDisplayed();
-    }
+//    public boolean isOpened() {
+//        return mainwindow.isDisplayed();
+//    }
 
-    public void selectKlientBiznesowyCheckbox() {
+    public KontaktPage selectKlientBiznesowyCheckbox() {
         checkboxKlientBiznesowy.click();
+        return this;
+
     }
 
-    public void enterData() {
+    public KontaktPage enterData(BusinessClient businessClient) {
 
         checkboxKlientBiznesowy.click();
         textboxName.click();
-        textboxName.sendKeys(Constant.UserData.imie_i_nazwisko);
+        textboxName.sendKeys(businessClient.getFullName());
         textboxEmail.click();
-        textboxEmail.sendKeys(Constant.UserData.email);
+        textboxEmail.sendKeys(businessClient.getEmail());
         textboxPhone.click();
-        textboxPhone.sendKeys(Constant.UserData.telefon);
+        textboxPhone.sendKeys(businessClient.getPhone());
         textboxAdditionalInformation.click();
-        textboxAdditionalInformation.sendKeys(Constant.UserData.tresc);
+        textboxAdditionalInformation.sendKeys(businessClient.getDescription());
+        return this;
     }
 
-    public void chooseTopic() {
+    public KontaktPage chooseTopic() {
         dropdownChooseTopic.click();
         textboxSearch.sendKeys("Przelewy natychmiastowe", Keys.ENTER);
+        return this;
     }
 
-    public void selectEmailAgreement() {
+    public KontaktPage selectEmailAgreement() {
         checkboxEmailAgreement.click();
+        return this;
     }
 
-    public void selectAgreement() {
+    public KontaktPage selectAgreement() {
         checkboxAgreement.click();
+        return this;
     }
 
 
