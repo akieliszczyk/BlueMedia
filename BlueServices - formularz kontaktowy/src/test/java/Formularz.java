@@ -11,7 +11,6 @@ public class Formularz extends TestConfig {
     public void completeTheForm() throws InterruptedException {
         homePage = new HomePage(driver);
         homePage.openKontaktPage();
-
         kontaktPage = new KontaktPage(driver);
         kontaktPage.selectKlientBiznesowyCheckbox();
         kontaktPage.enterData();
