@@ -30,13 +30,13 @@ public class ContaktPage extends BasePage {
     @FindBy(id = "select2-subject-container")
     private WebElement listTopic;
 
-    @FindBy(xpath = "//div[contains(@class,\"bsf__radio\")]//input[contains(@data-request-data,\"id:1,post_id:370\")]")
+    @FindBy(xpath = "//input[contains(@data-request-data,\"id:1,post_id:370\")]")
     private WebElement checkboxKlientBiznesowy;
 
     @FindBy(id = "agreement_1")
     private WebElement checkboxAgreement;
 
-    @FindBy(xpath = "//div[contains(@class,\"bsf__radio\")]//input[contains(@value,\"email\")]")
+    @FindBy(xpath = "//input[contains(@value,\"email\")]")
     private WebElement checkboxEmailAgreement;
 
     @FindBy(className = "select2-selection__arrow")

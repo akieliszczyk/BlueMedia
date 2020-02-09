@@ -8,7 +8,7 @@ import pages.contaktPage.ContaktPage;
 
 public class NavigationBar extends BasePage {
 
-    @FindBy(xpath = "//div[contains(@class,'header__navigation')]//a[contains(text(),'Kontakt')]")
+    @FindBy(xpath = "//a[contains(text(),'Kontakt')]")
     private WebElement buttonKontakt;
 
 
